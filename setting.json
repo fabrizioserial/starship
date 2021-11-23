@@ -1,0 +1,26 @@
+{
+  "PLAYERS": 2,
+  "LIVES": 4,
+  "PLAYER_KEYSBOARD": [
+    [
+      "UP",
+      "LEFT",
+      "RIGHT",
+      "SPACE"
+    ],
+    [
+      "W",
+      "A",
+      "D",
+      "CONTROL"
+    ]
+  ],
+  "SHIP_NAMES": [
+    "starship2.png",
+    "starship.png"
+  ],
+  "BULLET_BY_SHIP": [
+    "ELECTRIC",
+    "FIRE"
+  ]
+}

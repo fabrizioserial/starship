@@ -7,9 +7,10 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 
 repositories {
+    // Use Maven Central for resolving dependencies.
     mavenCentral()
     maven {
-        url = uri("https://maven.pkg.github.com/austral-ingsis/starships-fx")
+        url = "https://maven.pkg.github.com/austral-ingsis/starships-fx"
         credentials {
             username = System.getenv("USERNAME")
             password = System.getenv("TOKEN")
@@ -22,6 +23,10 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation 'edu.austral.dissis.starships:lib:1.1.0'
     compileOnly 'org.jetbrains:annotations:16.0.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 test {
