@@ -1,7 +1,7 @@
 import DTO.AsteroidDTO;
 import DTO.PlayerDTO;
 import GUI.PlayerGUI;
-import Menu.MenuBox;
+import Menu.MenuContainer;
 import Menu.MenuItem;
 import collider.GameCollider;
 import controller.AsteroidController;
@@ -145,7 +145,7 @@ class GameManager {
             }
         });
 
-        MenuBox menu = new MenuBox(logo, resumeGame, newGame, loadSaved, save, change_ship, exit);
+        MenuContainer menu = new MenuContainer(logo, resumeGame, newGame, loadSaved, save, change_ship, exit);
 
         pane.getChildren().add(menu);
 
@@ -298,7 +298,7 @@ class GameManager {
             }
         });
 
-        MenuBox menu = new MenuBox("PLAYER: " + i , ship.get(), falcon, xwing, next, back);
+        MenuContainer menu = new MenuContainer("PLAYER: " + i , ship.get(), falcon, xwing, next, back);
 
         pane.getChildren().add(menu);
 

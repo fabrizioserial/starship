@@ -15,10 +15,10 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import lombok.SneakyThrows;
 
-public class MenuBox extends StackPane {
+public class MenuContainer extends StackPane {
 
     @SneakyThrows
-    public MenuBox(String title, String ship, MenuItem... items) {
+    public MenuContainer(String title, String ship, MenuItem... items) {
         Rectangle bg = new Rectangle(1280, 720);
         bg.setX(800);
         bg.setOpacity(0.2);
@@ -41,7 +41,7 @@ public class MenuBox extends StackPane {
         getChildren().addAll(bg, vBox);
     }
 
-    public MenuBox(ImageView logo, MenuItem... items) {
+    public MenuContainer(ImageView logo, MenuItem... items) {
         Rectangle bg = new Rectangle(1280, 720);
         bg.setX(500);
         bg.setOpacity(0.2);
